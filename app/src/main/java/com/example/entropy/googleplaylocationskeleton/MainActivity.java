@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApliClient);
         if (mLastLocation!=null) {
-            longitude.append(String.valueOf(mLastLocation.getLongitude()));
-            latitude.append(String.valueOf(mLastLocation.getLatitude()));
+            longitude.setText(String.valueOf(mLastLocation.getLongitude()));
+            latitude.setText(String.valueOf(mLastLocation.getLatitude()));
         }
 
     }
